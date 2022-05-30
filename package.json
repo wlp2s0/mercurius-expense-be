@@ -1,0 +1,32 @@
+{
+  "scripts": {
+    "dev": "ts-node-dev --no-notify --inspect=4321 ./src/index.ts",
+    "start:ts": "node -r ts-node/register ./src/index.ts",
+    "start": "node ./dist/index.js",
+    "build": "tsc",
+    "lint": "eslint './**/*.ts'",
+    "lint-and-fix": "eslint './**/*.ts' --fix",
+    "check": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postversion": "git push --follow-tags"
+  },
+  "devDependencies": {
+    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@apollo/federation": "^0.20.7",
+    "@fastify/session": "^8.1.0",
+    "apollo-graphql": "^0.9.6",
+    "fastify": "^3.28.0",
+    "fastify-cookie": "^5.6.0",
+    "graphql": "^16.3.0",
+    "graphql-scalars": "^1.17.0",
+    "graphql-transform-federation": "^2.2.0",
+    "mercurius": "^9.3.6",
+    "mercurius-upload": "^4.0.0",
+    "mongoose": "^6.2.10",
+    "nexus": "^1.3.0"
+  }
+}
